@@ -1,19 +1,18 @@
 #include <stdio.h>
 
-// Início do Código
-int main(){
+int main() {
+    // Nome e CPF
+    char nome[70];
+    char cpf[12]; // 11 dígitos + '\0'
 
-    //Nome e CPF
-    char nome[70], cpf[11];
+    // Pede para o usuário preencher os dados
+    printf("Por favor digite seu nome completo: ");
+    scanf(" %[^\n]", nome);
 
-    //Pede para o usuário preencher os dados
-    printf("Por favor digite seu nome completo: ", nome);
-    scanf(" %s[^\n]", nome);
-
-    printf("Por favor digite seu CPF (somente numeros): ", cpf);
+    printf("Por favor digite seu CPF (somente numeros): ");
     scanf("%s", cpf);
 
-    //Boas-vindas
+    // Boas-vindas
     printf("Ola, %s! Seja bem-vindo a Clinica Exames.\n", nome);
 
     // Declaração de variáveis
