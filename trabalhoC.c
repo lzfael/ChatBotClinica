@@ -107,7 +107,7 @@ switch (escolhadata) {
         scanf ("%d", &escolhahr);
 
         // Se a escolha não for válida, exibe mensagem de erro
-        if (escolha <1 || escolha >5)
+        if (escolhahr <1 || escolhahr >5)
             printf ("Opcao invalida! Escolha uma opcao entre 1 e 5. \n");
     }
 
@@ -139,7 +139,7 @@ switch (escolhadata) {
     }
 
     // Exibe mensagem de confirmação
-    printf("Obrigado! Sua consulta foi agendada:\n");
+    printf("Obrigado, %s! Sua consulta foi agendada:\n", nome);
     printf("- Nome: %s\n", nome);
     printf("- CPF: %s\n", cpf);
     switch (escolha) {
